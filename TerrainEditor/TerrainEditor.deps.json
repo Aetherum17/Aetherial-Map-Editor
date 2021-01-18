@@ -17,6 +17,10 @@
       },
       "runtimepack.Microsoft.NETCore.App.Runtime.win-x86/3.1.9": {
         "runtime": {
+          "System.Collections.dll": {
+            "assemblyVersion": "4.1.2.0",
+            "fileVersion": "4.700.20.47203"
+          },
           "System.Console.dll": {
             "assemblyVersion": "4.1.2.0",
             "fileVersion": "4.700.20.47203"
@@ -25,7 +29,15 @@
             "assemblyVersion": "4.1.2.0",
             "fileVersion": "4.700.20.47203"
           },
+          "System.Linq.dll": {
+            "assemblyVersion": "4.2.2.0",
+            "fileVersion": "4.700.20.47203"
+          },
           "System.Runtime.Extensions.dll": {
+            "assemblyVersion": "4.2.2.0",
+            "fileVersion": "4.700.20.47203"
+          },
+          "System.Runtime.dll": {
             "assemblyVersion": "4.2.2.0",
             "fileVersion": "4.700.20.47203"
           }
