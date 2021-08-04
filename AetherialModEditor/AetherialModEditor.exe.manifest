@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AetherialModEditor.exe" size="34712">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AetherialModEditor.exe" size="41368">
       <assemblyIdentity name="AetherialModEditor" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>n65qWjF/eyYbyyPpmYUreLcg72yUzkwNu8aii6IhxPc=</dsig:DigestValue>
+        <dsig:DigestValue>34CYWmbD2sDs7J1V7LYxPWbc4jASWagWtxBDUzBQgM4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
