@@ -839,7 +839,7 @@
     </member>
     <member name="P:GemBox.Document.CharacterFormat.RightToLeft">
       <summary>
-            When true, the contents of this run shall have right-to-left reading order. Supported only in DOCX, DOC, PDF, XPS and image file formats.
+            When true, the contents of this run shall have right-to-left reading order.
             </summary>
       <value>
         <see langword="true" /> if the contents of this run shall have right-to-left reading order.; otherwise, <see langword="false" />.
@@ -1476,7 +1476,7 @@
             File extension that is extracted from the <paramref name="path" /> is used to create the appropriate <see cref="T:GemBox.Document.LoadOptions" /> derived class instance that is then passed to the <see cref="M:GemBox.Document.DocumentModel.Load(System.String,GemBox.Document.LoadOptions)" /> method.
             <para>Following file extensions are supported:</para><list type="bullet"><item><description>Microsoft Word: .docx, .docm, .dotm, .dotx</description></item><item><description>Microsoft Word 97-2003: .doc, .dot</description></item><item><description>HyperText Markup Language: .htm, .html, .mht, .mhtml</description></item><item><description>Rich Text Format: .rtf</description></item><item><description>Portable Document Format: .pdf</description></item><item><description>Plain Text: .txt</description></item></list></remarks>
       <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-vb-net-open-read-word-file/301">Open and read Word file in C# and VB.NET</seealso>
-      <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-convert-word-html-to-pdf/304">Convert Word and HTML to PDF in C# and VB.NET</seealso>
+      <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-convert-word-to-pdf/304">Convert Word and HTML to PDF in C# and VB.NET</seealso>
       <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-convert-word-to-from-html/105">Convert between Word files and HTML pages in C# and VB.NET</seealso>
     </member>
     <member name="M:GemBox.Document.ComHelper.LoadWithOptions(System.String,System.Object)">
@@ -1487,7 +1487,7 @@
       <param name="options">The loading options which can be used to define settings for load operation.</param>
       <returns>A loaded document.</returns>
       <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-vb-net-open-read-word-file/301">Open and read Word file in C# and VB.NET</seealso>
-      <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-convert-word-html-to-pdf/304">Convert Word and HTML to PDF in C# and VB.NET</seealso>
+      <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-convert-word-to-pdf/304">Convert Word and HTML to PDF in C# and VB.NET</seealso>
       <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-convert-word-to-from-html/105">Convert between Word files and HTML pages in C# and VB.NET</seealso>
     </member>
     <member name="M:GemBox.Document.ComHelper.SaveWithOptions(System.Object,System.String,System.Object)">
@@ -1498,7 +1498,7 @@
       <param name="path">The path to which to save the document.</param>
       <param name="options">The saving options which can be used to define settings for save operation.</param>
       <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-vb-net-create-write-word-file/302">Create and write to Word file in C# and VB.NET</seealso>
-      <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-convert-word-html-to-pdf/304">Convert Word and HTML to PDF in C# and VB.NET</seealso>
+      <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-convert-word-to-pdf/304">Convert Word and HTML to PDF in C# and VB.NET</seealso>
       <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-convert-word-to-from-html/105">Convert between Word files and HTML pages in C# and VB.NET</seealso>
     </member>
     <member name="M:GemBox.Document.ComHelper.GetChildElements(System.Object,System.Boolean,System.Int32)">
@@ -2988,7 +2988,6 @@
       <value>
             The custom XML part ID.
             </value>
-      <exception cref="T:System.ArgumentException">The document already contains a custom XML part with the same ID.</exception>
     </member>
     <member name="P:GemBox.Document.CustomXmlPart.Data">
       <summary>
@@ -3227,7 +3226,7 @@
       <seealso cref="M:GemBox.Document.DocumentModel.Load(System.String,GemBox.Document.LoadOptions)" />
       <seealso cref="M:GemBox.Document.DocumentModel.Load(System.IO.Stream,GemBox.Document.LoadOptions)" />
       <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-vb-net-open-read-word-file/301">Open and read Word file in C# and VB.NET</seealso>
-      <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-convert-word-html-to-pdf/304">Convert Word and HTML to PDF in C# and VB.NET</seealso>
+      <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-convert-word-to-pdf/304">Convert Word and HTML to PDF in C# and VB.NET</seealso>
       <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-convert-word-to-from-html/105">Convert between Word files and HTML pages in C# and VB.NET</seealso>
     </member>
     <member name="M:GemBox.Document.DocLoadOptions.#ctor">
@@ -3643,7 +3642,7 @@
         <see langword="true" /> to import source element descendants; otherwise <see langword="false" />.</param>
       <returns>Imported (cloned) source element that can be inserted in this <see cref="T:GemBox.Document.DocumentModel" /> instance.</returns>
       <seealso xhref="content-model.md" target="_self">GemBox.Document Content Model</seealso>
-      <seealso href="https://www.gemboxsoftware.com/document/examples/importing/502">Importing example</seealso>
+      <seealso href="https://www.gemboxsoftware.com/document/examples/combine-word-file-c-sharp-vb-net/502">Importing example</seealso>
     </member>
     <member name="M:GemBox.Document.DocumentModel.Import``1(``0,System.Boolean,System.Boolean)">
       <summary>
@@ -3657,7 +3656,7 @@
         <see langword="true" /> to use destination document (this <see cref="T:GemBox.Document.DocumentModel" /> instance) styles; otherwise <see langword="false" /> to use source document styles.</param>
       <returns>Imported (cloned) source element that can be inserted in this <see cref="T:GemBox.Document.DocumentModel" /> instance.</returns>
       <seealso xhref="content-model.md" target="_self">GemBox.Document Content Model</seealso>
-      <seealso href="https://www.gemboxsoftware.com/document/examples/importing/502">Importing example</seealso>
+      <seealso href="https://www.gemboxsoftware.com/document/examples/combine-word-file-c-sharp-vb-net/502">Importing example</seealso>
     </member>
     <member name="M:GemBox.Document.DocumentModel.Import``1(``0,System.Boolean,GemBox.Document.ImportMapping)">
       <summary>
@@ -4341,7 +4340,7 @@
       <seealso cref="M:GemBox.Document.DocumentModel.Save(System.String,GemBox.Document.SaveOptions)" />
       <seealso cref="M:GemBox.Document.DocumentModel.Save(System.IO.Stream,GemBox.Document.SaveOptions)" />
       <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-vb-net-create-write-word-file/302">Create and write to Word file in C# and VB.NET</seealso>
-      <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-convert-word-html-to-pdf/304">Convert Word and HTML to PDF in C# and VB.NET</seealso>
+      <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-convert-word-to-pdf/304">Convert Word and HTML to PDF in C# and VB.NET</seealso>
       <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-convert-word-to-from-html/105">Convert between Word files and HTML pages in C# and VB.NET</seealso>
     </member>
     <member name="P:GemBox.Document.DocxSaveOptions.Format">
@@ -5400,6 +5399,12 @@
     </member>
     <member name="F:GemBox.Document.Drawing.ShapeType.FlowchartManualInput">
       <summary>Flowchart: Manual Input.</summary>
+    </member>
+    <member name="F:GemBox.Document.Drawing.ShapeType.FlowchartProcess">
+      <summary>Flowchart: Process.</summary>
+    </member>
+    <member name="F:GemBox.Document.Drawing.ShapeType.FlowchartDecision">
+      <summary>Flowchart: Decision.</summary>
     </member>
     <member name="F:GemBox.Document.Drawing.ShapeType.TextPath">
       <summary>
@@ -8098,8 +8103,13 @@
       <seealso cref="P:GemBox.Document.LoadOptions.HtmlDefault" />
       <seealso cref="M:GemBox.Document.DocumentModel.Load(System.String,GemBox.Document.LoadOptions)" />
       <seealso cref="M:GemBox.Document.DocumentModel.Load(System.IO.Stream,GemBox.Document.LoadOptions)" />
-      <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-convert-word-html-to-pdf/304">Convert Word and HTML to PDF in C# and VB.NET</seealso>
+      <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-convert-word-to-pdf/304">Convert Word and HTML to PDF in C# and VB.NET</seealso>
       <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-convert-word-to-from-html/105">Convert between Word files and HTML pages in C# and VB.NET</seealso>
+    </member>
+    <member name="E:GemBox.Document.HtmlLoadOptions.ResourceLoading">
+      <summary>
+            Occurs when external resources, like images and style sheets, are being loaded and can be used to customize the retrieving of linked resources.
+            </summary>
     </member>
     <member name="M:GemBox.Document.HtmlLoadOptions.#ctor">
       <summary>
@@ -8147,11 +8157,25 @@
             is ignored when loading the whole HTML file using <see cref="T:GemBox.Document.DocumentModel" />.<see cref="M:GemBox.Document.DocumentModel.Load(System.String)" /> methods.
             </remarks>
     </member>
+    <member name="P:GemBox.Document.HtmlLoadOptions.HtmlType">
+      <summary>
+            Gets or sets the type of HTML which should be imported.
+            </summary>
+      <value>
+            The <see cref="T:GemBox.Document.HtmlType" /> value for the type of HTML which should be imported.
+            </value>
+      <remarks>
+            Valid HTML types when importing are <see cref="F:GemBox.Document.HtmlType.Html" /> and <see cref="F:GemBox.Document.HtmlType.Mhtml" />.
+            </remarks>
+    </member>
     <member name="T:GemBox.Document.HtmlSaveOptions">
       <summary>
             Represents options for saving to HyperText Markup Language (HTML) format.
             </summary>
-      <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-convert-word-html-to-pdf/304">Convert Word and HTML to PDF in C# and VB.NET</seealso>
+      <remarks>
+            Pictures are exported only if one of this is true:
+            <list type="bullet"><item><description><see cref="P:GemBox.Document.HtmlSaveOptions.HtmlType" /> is <see cref="F:GemBox.Document.HtmlType.Mhtml" /></description></item><item><description><see cref="M:GemBox.Document.DocumentModel.Save(System.String)" /> or <see cref="M:GemBox.Document.DocumentModel.Save(System.String,GemBox.Document.SaveOptions)" /> overload is used</description></item><item><description><see cref="P:GemBox.Document.HtmlSaveOptions.FilesDirectoryPath" /> or <see cref="P:GemBox.Document.HtmlSaveOptions.EmbedImages" /> is specified</description></item></list></remarks>
+      <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-convert-word-to-pdf/304">Convert Word and HTML to PDF in C# and VB.NET</seealso>
       <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-convert-word-to-from-html/105">Convert between Word files and HTML pages in C# and VB.NET</seealso>
     </member>
     <member name="P:GemBox.Document.HtmlSaveOptions.FilesDirectoryPath">
@@ -8201,6 +8225,18 @@
       <remarks>
             If the value of this property is <see langword="true" /> then each image element will contain raw image data in its source attribute.
             This value doesn't change the pictures export behavior when using <see cref="F:GemBox.Document.HtmlType.Mhtml" />.
+            </remarks>
+    </member>
+    <member name="P:GemBox.Document.HtmlSaveOptions.KeepImageLinks">
+      <summary>
+            Gets or sets a value indicating whether to keep linked images as links.
+            </summary>
+      <value>
+        <see langword="true" /> if linked images should be kept as links; otherwise, <see langword="false" />.
+            </value>
+      <remarks>
+            If the value is set to <see langword="true" />, all linked images in the model will not be downloaded to <see cref="P:GemBox.Document.HtmlSaveOptions.FilesDirectoryPath" />.
+            They will be exported to HTML with original source paths. Otherwise, images will be downloaded and their links will be replaced with local paths.
             </remarks>
     </member>
     <member name="P:GemBox.Document.HtmlSaveOptions.UseContentIdHeaders">
@@ -8262,22 +8298,25 @@
     </member>
     <member name="T:GemBox.Document.HtmlType">
       <summary>
-            Defines type of HTML export.
+            Defines the type of HTML.
             </summary>
     </member>
     <member name="F:GemBox.Document.HtmlType.Html">
       <summary>
-            Export entire HTML document. Pictures are exported only if <see cref="M:GemBox.Document.DocumentModel.Save(System.String)" /> or <see cref="M:GemBox.Document.DocumentModel.Save(System.String,GemBox.Document.SaveOptions)" /> overload is used or if <see cref="P:GemBox.Document.HtmlSaveOptions.FilesDirectoryPath" /> or <see cref="P:GemBox.Document.HtmlSaveOptions.EmbedImages" /> is specified.
+            Entire HTML document.
             </summary>
     </member>
     <member name="F:GemBox.Document.HtmlType.HtmlInline">
       <summary>
-            Export HTML content inline, without html, head and body tags. Pictures are exported only if <see cref="M:GemBox.Document.DocumentModel.Save(System.String)" /> or <see cref="M:GemBox.Document.DocumentModel.Save(System.String,GemBox.Document.SaveOptions)" /> overload is used or if <see cref="P:GemBox.Document.HtmlSaveOptions.FilesDirectoryPath" /> or <see cref="P:GemBox.Document.HtmlSaveOptions.EmbedImages" /> is specified.
+            HTML content inline, without html, head and body tags.
             </summary>
+      <remarks>
+            This options is only valid when exporting to HTML.
+            </remarks>
     </member>
     <member name="F:GemBox.Document.HtmlType.Mhtml">
       <summary>
-            Export entire HTML document and images to MIME HTML (MHTML) format. Pictures are always exported.
+            Entire HTML document and images in MIME HTML (MHTML) format.
             </summary>
     </member>
     <member name="T:GemBox.Document.Hyperlink">
@@ -10244,7 +10283,7 @@
       <seealso cref="M:GemBox.Document.DocumentModel.Load(System.String)">DocumentModel.Load methods</seealso>
       <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-vb-net-open-read-word-file/301">Open and read Word file in C# and VB.NET</seealso>
       <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-read-extract-pdf-text/305">Read and Extract PDF Text in C# and VB.NET</seealso>
-      <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-convert-word-html-to-pdf/304">Convert Word and HTML to PDF in C# and VB.NET</seealso>
+      <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-convert-word-to-pdf/304">Convert Word and HTML to PDF in C# and VB.NET</seealso>
       <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-convert-word-to-from-html/105">Convert between Word files and HTML pages in C# and VB.NET</seealso>
     </member>
     <member name="P:GemBox.Document.LoadOptions.PreserveUnsupportedFeatures">
@@ -11182,6 +11221,11 @@
     <member name="F:GemBox.Document.NumberStyle.Chicago">
       <summary>
             Chicago Manual of Style (*, † ...)
+            </summary>
+    </member>
+    <member name="F:GemBox.Document.NumberStyle.JapaneseCounting">
+      <summary>
+            Japanese counting system (一, 二, ...)
             </summary>
     </member>
     <member name="T:GemBox.Document.Picture">
@@ -12127,6 +12171,15 @@
             Number style for the page number.
             </value>
     </member>
+    <member name="P:GemBox.Document.PageSetup.VerticalAlignment">
+      <summary>
+            Gets or sets the vertical alignment of text on each page in the section.
+            Supported only in DOCX format.
+            </summary>
+      <value>
+            The vertical alignment of the text in the section's pages.
+            </value>
+    </member>
     <member name="M:GemBox.Document.PageSetup.#ctor">
       <summary>
             Initializes a new instance of the <see cref="T:GemBox.Document.PageSetup" /> class.
@@ -12327,6 +12380,31 @@
             Clones this <see cref="T:GemBox.Document.PageSetup" /> instance.
             </summary>
       <returns>Cloned <see cref="T:GemBox.Document.PageSetup" />.</returns>
+    </member>
+    <member name="T:GemBox.Document.PageVerticalAlignment">
+      <summary>
+            Specifies vertical alignment of text on each page in the section.
+            </summary>
+    </member>
+    <member name="F:GemBox.Document.PageVerticalAlignment.Top">
+      <summary>
+            Top vertical alignment.
+            </summary>
+    </member>
+    <member name="F:GemBox.Document.PageVerticalAlignment.Center">
+      <summary>
+            Center vertical alignment.
+            </summary>
+    </member>
+    <member name="F:GemBox.Document.PageVerticalAlignment.Justify">
+      <summary>
+            Justified vertical alignment.
+            </summary>
+    </member>
+    <member name="F:GemBox.Document.PageVerticalAlignment.Bottom">
+      <summary>
+            Bottom vertical alignment.
+            </summary>
     </member>
     <member name="T:GemBox.Document.PaginatorOptions">
       <summary>
@@ -12871,7 +12949,7 @@
     </member>
     <member name="P:GemBox.Document.ParagraphFormat.RightToLeft">
       <summary>
-            When true, this is a right-to-left paragraph. Supported in DOCX, DOC, PDF, XPS and image file formats.
+            When true, this is a right-to-left paragraph.
             </summary>
       <value>
         <see langword="true" /> if this is right-to-left paragraph; otherwise, <see langword="false" />.
@@ -13317,7 +13395,7 @@
       <seealso cref="M:GemBox.Document.DocumentModel.Load(System.IO.Stream,GemBox.Document.LoadOptions)" />
       <seealso xhref="supported-file-formats.md#support-level-for-reading-pdf-format-beta" target="_self">Support level for reading PDF format</seealso>
       <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-read-extract-pdf-text/305">Read and Extract PDF Text in C# and VB.NET</seealso>
-      <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-convert-word-html-to-pdf/304">Convert Word and HTML to PDF in C# and VB.NET</seealso>
+      <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-convert-word-to-pdf/304">Convert Word and HTML to PDF in C# and VB.NET</seealso>
     </member>
     <member name="P:GemBox.Document.PdfLoadOptions.Password">
       <summary>
@@ -13402,7 +13480,7 @@
       <seealso cref="P:GemBox.Document.SaveOptions.PdfDefault" />
       <seealso cref="M:GemBox.Document.DocumentModel.Save(System.String,GemBox.Document.SaveOptions)" />
       <seealso cref="M:GemBox.Document.DocumentModel.Save(System.IO.Stream,GemBox.Document.SaveOptions)" />
-      <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-convert-word-html-to-pdf/304">Convert Word and HTML to PDF in C# and VB.NET</seealso>
+      <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-convert-word-to-pdf/304">Convert Word and HTML to PDF in C# and VB.NET</seealso>
     </member>
     <member name="P:GemBox.Document.PdfSaveOptions.Permissions">
       <summary>
@@ -14136,6 +14214,41 @@
         <see langword="true" /> if <paramref name="first" /> and <paramref name="second" /> paddings are not equal; otherwise, <see langword="false" />.
             </returns>
     </member>
+    <member name="T:GemBox.Document.ResourceLoadingEventArgs">
+      <summary>
+            Provides data for the <see cref="E:GemBox.Document.HtmlLoadOptions.ResourceLoading" /> event.
+            </summary>
+    </member>
+    <member name="P:GemBox.Document.ResourceLoadingEventArgs.Uri">
+      <summary>
+            The URI of the external resource in loaded document, you can use it to provide a different location for the current resource.
+            </summary>
+    </member>
+    <member name="P:GemBox.Document.ResourceLoadingEventArgs.Data">
+      <summary>
+            The current resource data, you can use it to provide custom data. 
+            </summary>
+    </member>
+    <member name="P:GemBox.Document.ResourceLoadingEventArgs.Type">
+      <summary>
+            The type of the external resource.
+            </summary>
+    </member>
+    <member name="T:GemBox.Document.ResourceType">
+      <summary>
+            Represents the type of external resource.
+            </summary>
+    </member>
+    <member name="F:GemBox.Document.ResourceType.Image">
+      <summary>
+            Image.
+            </summary>
+    </member>
+    <member name="F:GemBox.Document.ResourceType.StyleSheet">
+      <summary>
+            Cascading Style Sheet.
+            </summary>
+    </member>
     <member name="T:GemBox.Document.RtfLoadOptions">
       <summary>
             Represents a class that stores loading options for Rich Text (RTF) format.
@@ -14293,7 +14406,7 @@
             </summary>
       <seealso cref="M:GemBox.Document.DocumentModel.Save(System.String)">DocumentModel.Save methods</seealso>
       <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-vb-net-create-write-word-file/302">Create and write to Word file in C# and VB.NET</seealso>
-      <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-convert-word-html-to-pdf/304">Convert Word and HTML to PDF in C# and VB.NET</seealso>
+      <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-convert-word-to-pdf/304">Convert Word and HTML to PDF in C# and VB.NET</seealso>
       <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-convert-word-to-from-html/105">Convert between Word files and HTML pages in C# and VB.NET</seealso>
     </member>
     <member name="P:GemBox.Document.SaveOptions.DocxDefault">
@@ -18526,6 +18639,12 @@
             Rejects this revision.
             </summary>
     </member>
+    <member name="M:GemBox.Document.Tracking.Revision.Equals(System.Object)">
+      <inheritdoc />
+    </member>
+    <member name="M:GemBox.Document.Tracking.Revision.GetHashCode">
+      <inheritdoc />
+    </member>
     <member name="T:GemBox.Document.Tracking.RevisionCollection">
       <summary>
             Represents the revisions in the document
@@ -18568,6 +18687,36 @@
     <member name="F:GemBox.Document.Tracking.RevisionColor.BrightGreen">
       <summary>
             Represents #84a35b color.
+            </summary>
+    </member>
+    <member name="F:GemBox.Document.Tracking.RevisionColor.LightPink">
+      <summary>
+            Represents #fce6f4 color.
+            </summary>
+    </member>
+    <member name="F:GemBox.Document.Tracking.RevisionColor.LightBlue">
+      <summary>
+            Represents #e1f2fa color.
+            </summary>
+    </member>
+    <member name="F:GemBox.Document.Tracking.RevisionColor.LightYellow">
+      <summary>
+            Represents #fef4de color.
+            </summary>
+    </member>
+    <member name="F:GemBox.Document.Tracking.RevisionColor.LightPurple">
+      <summary>
+            Represents #eadfef color.
+            </summary>
+    </member>
+    <member name="F:GemBox.Document.Tracking.RevisionColor.LightGreen">
+      <summary>
+            Represents #dff8ce color.
+            </summary>
+    </member>
+    <member name="F:GemBox.Document.Tracking.RevisionColor.LightOrange">
+      <summary>
+            Represents #fce3d0 color.
             </summary>
     </member>
     <member name="F:GemBox.Document.Tracking.RevisionColor.DarkBlue">
@@ -18722,10 +18871,10 @@
     </member>
     <member name="P:GemBox.Document.Tracking.RevisionOptions.MovedFromEffect">
       <summary>
-            Gets or sets the decoration effect which should be applied on the content which was moved from the current position.
+            Gets or sets the decoration effect which should be applied on the content that was moved from the current position.
             </summary>
       <value>
-            The decoration effect which should be applied on the content which was moved from the current position.
+            The decoration effect which should be applied on the content that was moved from the current position.
             </value>
       <remarks>
             The default value is <see cref="F:GemBox.Document.Tracking.RevisionTextEffect.DoubleStrikeThrough" />.
@@ -18733,10 +18882,10 @@
     </member>
     <member name="P:GemBox.Document.Tracking.RevisionOptions.MovedFromColor">
       <summary>
-            Gets or sets the color which should be used for the content which was moved from the current position.
+            Gets or sets the color which should be used for the content that was moved from the current position.
             </summary>
       <value>
-            The color which should be used for the content which was moved from the current position.
+            The color which should be used for the content that was moved from the current position.
             </value>
       <remarks>
             The default value is <see cref="F:GemBox.Document.Tracking.RevisionColor.Green" />.
@@ -18744,10 +18893,10 @@
     </member>
     <member name="P:GemBox.Document.Tracking.RevisionOptions.MovedToEffect">
       <summary>
-            Gets or sets the decoration effect which should be applied on the content which was moved to the current position.
+            Gets or sets the decoration effect which should be applied on the content that was moved to the current position.
             </summary>
       <value>
-            The decoration effect which should be applied on the content which was moved to the current position.
+            The decoration effect which should be applied on the content that was moved to the current position.
             </value>
       <remarks>
             The default value is <see cref="F:GemBox.Document.Tracking.RevisionTextEffect.DoubleUnderline" />.
@@ -18755,13 +18904,35 @@
     </member>
     <member name="P:GemBox.Document.Tracking.RevisionOptions.MovedToColor">
       <summary>
-            Gets or sets the color which should be used for the content which was moved to the current position.
+            Gets or sets the color which should be used for the content that was moved to the current position.
             </summary>
       <value>
-            The color which should be used for the content which was moved to the current position.
+            The color which should be used for the content that was moved to the current position.
             </value>
       <remarks>
             The default value is <see cref="F:GemBox.Document.Tracking.RevisionColor.Green" />.
+            </remarks>
+    </member>
+    <member name="P:GemBox.Document.Tracking.RevisionOptions.InsertedCellsColor">
+      <summary>
+            Gets or sets the color which should be used for the background of the inserted cells.
+            </summary>
+      <value>
+            The color which should be used for the background of the inserted cells.
+            </value>
+      <remarks>
+            The default value is <see cref="F:GemBox.Document.Tracking.RevisionColor.LightBlue" />.
+            </remarks>
+    </member>
+    <member name="P:GemBox.Document.Tracking.RevisionOptions.DeletedCellsColor">
+      <summary>
+            Gets or sets the color which should be used for the background of the deleted cells.
+            </summary>
+      <value>
+            The color which should be used for the background of the deleted cells.
+            </value>
+      <remarks>
+            The default value is <see cref="F:GemBox.Document.Tracking.RevisionColor.LightPink" />.
             </remarks>
     </member>
     <member name="M:GemBox.Document.Tracking.RevisionOptions.#ctor">
@@ -19414,7 +19585,7 @@
       <seealso cref="M:GemBox.Document.DocumentModel.Load(System.IO.Stream,GemBox.Document.LoadOptions)" />
       <seealso href="https://blogs.msdn.microsoft.com/ericwhite/2008/09/29/the-flat-opc-format/">Flat OPC format.</seealso>
       <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-vb-net-open-read-word-file/301">Open and read Word file in C# and VB.NET</seealso>
-      <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-convert-word-html-to-pdf/304">Convert Word and HTML to PDF in C# and VB.NET</seealso>
+      <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-convert-word-to-pdf/304">Convert Word and HTML to PDF in C# and VB.NET</seealso>
       <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-convert-word-to-from-html/105">Convert between Word files and HTML pages in C# and VB.NET</seealso>
     </member>
     <member name="P:GemBox.Document.XmlLoadOptions.Password">
@@ -19441,7 +19612,7 @@
       <seealso cref="M:GemBox.Document.DocumentModel.Save(System.IO.Stream,GemBox.Document.SaveOptions)" />
       <seealso href="https://blogs.msdn.microsoft.com/ericwhite/2008/09/29/the-flat-opc-format/">Flat OPC format.</seealso>
       <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-vb-net-create-write-word-file/302">Create and write to Word file in C# and VB.NET</seealso>
-      <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-convert-word-html-to-pdf/304">Convert Word and HTML to PDF in C# and VB.NET</seealso>
+      <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-convert-word-to-pdf/304">Convert Word and HTML to PDF in C# and VB.NET</seealso>
       <seealso href="https://www.gemboxsoftware.com/document/examples/c-sharp-convert-word-to-from-html/105">Convert between Word files and HTML pages in C# and VB.NET</seealso>
     </member>
     <member name="P:GemBox.Document.XmlSaveOptions.Password">
